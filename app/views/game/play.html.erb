@@ -1,0 +1,43 @@
+<% content_for :back_link do %>
+  <%= render :partial => 'partials/back_link' %>
+<% end %>
+
+<div class="row text-center">
+  <div class="col">
+    <h1 class="mb-5">Player vs Curb</h1>
+    <h3> Select your hand : </h3>
+  </div>
+</div>
+
+<div class="row justify-content-md-center">
+  <div class="col col-lg-4">
+    <div class="card text-center">
+      <a href="<%= result_path(:paper) %>">
+        <div class="card-body text-center">
+          <%= image_tag 'paper.png', width: 200 %>
+          <h5 class="card-title">Paper</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col col-lg-4">
+    <div class="card">
+      <a href="<%= result_path(:rock) %>">
+        <div class="card-body text-center">
+          <%= image_tag 'rock.png', width: 200 %>
+          <h5 class="card-title">Rock</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col col-lg-4">
+    <div class="card">
+      <a href="<%= result_path(:scissors) %>">
+        <div class="card-body text-center">
+          <%= image_tag 'scissors.png', width: 200 %>
+          <h5 class="card-title">Scissors</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<% content_for :back_link do %>
+  <%= render :partial => 'partials/back_link' %>
+<% end %>
+
+<div class="row text-center">
+  <div class="col">
+    <h1 class="mb-5">Game Scores</h1>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      
+      <th scope="col">Round</th>
+       <th scope="col">Your Results</th>
+    </tr>
+    </thead>
+    <tbody>
+      <% @scores.each_with_index do |score, idx| %>
+        <tr class="<%= 'table-success' if score.to_sym == :victory %>">
+          <th scope="row"><%= idx+1 %></th>
+          <td><%= score.capitalize %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

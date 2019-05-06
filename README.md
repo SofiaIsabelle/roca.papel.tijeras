@@ -35,7 +35,8 @@
     
       
       
-#### Did Complete the Application within the 3 hour time frame.
+#### Did Complete the Application within an hour, it's pretty basic , but it does what it needs to get done. 
+#### 404 and 500 error routes, controller and templates aren't necessary , but not everyone who uses a computer knows what 404 and 500 errors are
       
 
 
